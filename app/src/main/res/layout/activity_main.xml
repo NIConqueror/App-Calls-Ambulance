@@ -47,7 +47,7 @@
             app:layout_constraintHorizontal_bias="0.496" android:background="#3A8DFD" android:textColor="#F8F8F8"
     />
     <Button
-            android:text="Войти"
+            android:text="@string/call_hospit"
             android:layout_width="206dp"
             android:layout_height="51dp"
             android:id="@+id/button2"

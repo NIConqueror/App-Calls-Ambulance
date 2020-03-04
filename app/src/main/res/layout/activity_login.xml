@@ -7,19 +7,19 @@
         android:layout_height="match_parent"
         tools:context=".LoginActivity" android:background="#8CB0D3FD">
     <ImageView
-            android:layout_width="134dp"
-            android:layout_height="136dp" app:srcCompat="@mipmap/ic_launcher_ambulbr"
+            android:layout_width="131dp"
+            android:layout_height="125dp" app:srcCompat="@mipmap/ic_launcher_ambulbr"
             android:id="@+id/imageView3" app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="32dp" android:layout_marginBottom="32dp"
             app:layout_constraintBottom_toTopOf="@+id/textView5" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="32dp" android:layout_marginStart="32dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"
-            android:layout_marginRight="32dp" app:layout_constraintVertical_bias="0.100000024"/>
+            android:layout_marginRight="32dp" app:layout_constraintVertical_bias="1.0"/>
     <TextView
             android:text="Вызов скорой помощи"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView5" android:layout_marginTop="32dp"
+            android:id="@+id/textView5" android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/imageView3" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="32dp" android:layout_marginStart="32dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"
@@ -34,30 +34,30 @@
             android:layout_marginRight="40dp"
             app:layout_constraintTop_toBottomOf="@+id/textView5" android:textSize="40sp"
             android:textColor="@android:color/holo_red_dark" android:fontFamily="@font/noto_sans_bold"
-            android:layout_marginBottom="55dp" app:layout_constraintBottom_toTopOf="@+id/editText"/>
+            android:layout_marginBottom="16dp" app:layout_constraintBottom_toTopOf="@+id/editText"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="phone"
-            android:ems="12"
+            android:ems="14"
             android:id="@+id/editText"
             android:text="Мобильный номер телефона" android:layout_marginTop="32dp"
             app:layout_constraintTop_toBottomOf="@+id/textView6" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="32dp" android:layout_marginStart="32dp" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="32dp" android:layout_marginRight="32dp"
-            app:layout_constraintBottom_toTopOf="@+id/editText2" android:textColor="#51030303"/>
+            app:layout_constraintBottom_toTopOf="@+id/editText2" android:textColor="#51030303" android:textSize="14dp"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:ems="12"
+            android:ems="14"
             android:id="@+id/editText2"
             android:text="Пароль" app:layout_constraintTop_toBottomOf="@+id/editText"
             app:layout_constraintBottom_toTopOf="@+id/button3"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="32dp" android:layout_marginStart="32dp"
-            app:layout_constraintHorizontal_bias="0.505" android:textColor="#51030303"/>
+            app:layout_constraintHorizontal_bias="0.505" android:textColor="#51030303" android:textSize="14dp"/>
     <Button
             android:text="Войти"
             android:layout_width="181dp"
@@ -65,26 +65,30 @@
             android:id="@+id/button3" android:background="#3A8DFD"
             android:textColor="#FFFFFF"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="115dp" android:layout_marginStart="115dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="115dp"
-            android:layout_marginRight="115dp" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/editText2" app:layout_constraintHorizontal_bias="0.0"/>
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/editText2"
+            app:layout_constraintBottom_toTopOf="@+id/textView7"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp"/>
     <ImageView
             android:layout_width="54dp"
             android:layout_height="40dp" app:srcCompat="@drawable/ic_launcher_call"
             android:id="@+id/imageView2"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="32dp"
             android:layout_marginStart="32dp" app:layout_constraintEnd_toStartOf="@+id/editText"
-            android:layout_marginTop="148dp" app:layout_constraintTop_toBottomOf="@+id/textView5"
-            app:layout_constraintHorizontal_bias="0.0"/>
+            android:layout_marginTop="100dp" app:layout_constraintTop_toBottomOf="@+id/textView5"
+            android:layout_marginRight="10dp" android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView6"/>
     <ImageView
             android:layout_width="54dp"
             android:layout_height="40dp" app:srcCompat="@drawable/ic_launcher_key"
             android:id="@+id/imageView6"
-            app:layout_constraintTop_toBottomOf="@+id/editText" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
             app:layout_constraintEnd_toStartOf="@+id/button3"
-            android:layout_marginLeft="32dp" android:layout_marginStart="32dp" android:layout_marginRight="24dp"
-            android:layout_marginEnd="24dp"/>
+            android:layout_marginRight="32dp"
+            android:layout_marginEnd="32dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="30dp" android:layout_marginStart="30dp"
+    />
     <TextView
             android:text="(Нет аккаунта? Нажмите сюда - регистрация)"
             android:layout_width="175dp"
