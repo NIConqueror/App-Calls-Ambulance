@@ -119,4 +119,60 @@
             app:layout_constraintTop_toBottomOf="@+id/tabLayout"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="300dp"
             android:layout_marginRight="300dp"/>
+    <TextView
+            android:text="Как защититься от коронавируса?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView25"
+            android:layout_marginBottom="64dp" app:layout_constraintBottom_toTopOf="@+id/toolbar2"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.596"
+            app:layout_constraintEnd_toEndOf="parent" android:textColor="#FFFFFF"/>
+    <TextView
+            android:text="Первый случай коронавируса потверждён в Беларуси, в связи с чем министр здравохранения страны ..."
+            android:layout_width="261dp"
+            android:layout_height="52dp"
+            android:id="@+id/textView27" app:layout_constraintStart_toEndOf="@+id/toolbar4"
+            app:layout_constraintHorizontal_bias="0.446" app:layout_constraintEnd_toStartOf="@+id/toolbar4"
+            android:textColor="#FFFFFF" android:textSize="11sp" app:layout_constraintTop_toBottomOf="@+id/textView25"/>
+    <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp" app:srcCompat="@mipmap/ic_launcherlik_round"
+            android:id="@+id/imageView21"
+            app:layout_constraintStart_toEndOf="@+id/toolbar4" app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintEnd_toStartOf="@+id/textView27" app:layout_constraintTop_toBottomOf="@+id/toolbar4"
+            app:layout_constraintBottom_toTopOf="@+id/toolbar4" app:layout_constraintVertical_bias="0.425"
+            android:layout_marginRight="22dp" android:layout_marginEnd="22dp" android:layout_marginTop="12dp"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline" app:layout_constraintGuide_begin="20dp"
+                                                android:orientation="vertical"/>
+    <TextView
+            android:text="Новости дня :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView28" android:textColor="#FFFFFF" app:layout_constraintStart_toEndOf="@+id/toolbar2"
+            app:layout_constraintHorizontal_bias="0.619" app:layout_constraintEnd_toStartOf="@+id/toolbar2"
+            app:layout_constraintBottom_toTopOf="@+id/textView29" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="485dp"/>
+    <TextView
+            android:text="Бригада скорой помощи должна прибыть к месту оказания помощи не более чем 20 минут"
+            android:layout_width="261dp"
+            android:layout_height="51dp"
+            android:id="@+id/textView29" android:textColor="#FFFFFF"
+            android:textSize="11sp" app:layout_constraintTop_toBottomOf="@+id/textView28"
+            app:layout_constraintStart_toEndOf="@+id/toolbar2" app:layout_constraintHorizontal_bias="0.445"
+            app:layout_constraintEnd_toStartOf="@+id/toolbar2" android:layout_marginTop="4dp"/>
+    <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp" app:srcCompat="@mipmap/ic_launcherlik3"
+            android:id="@+id/imageView22"
+            app:layout_constraintStart_toEndOf="@+id/toolbar2" app:layout_constraintHorizontal_bias="0.868"
+            app:layout_constraintEnd_toStartOf="@+id/toolbar2" app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+            app:layout_constraintBottom_toTopOf="@+id/toolbar2" app:layout_constraintVertical_bias="0.322"/>
+    <androidx.constraintlayout.widget.Barrier android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                              android:id="@+id/barrier2" app:barrierDirection="left"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline2" app:layout_constraintGuide_begin="20dp"
+                                                android:orientation="vertical"/>
+    <androidx.constraintlayout.widget.Barrier android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                              android:id="@+id/barrier3" app:barrierDirection="left"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
